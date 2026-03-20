@@ -4,9 +4,23 @@
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <!-- Vehicles, persons and containers (sorted by depart) -->
-    <trip id="t_0" depart="0.00" from="E0" to="E2" departLane="0"/>
+
+    <!-- Tipo de veiculo sem mudanca de lane estrategica -->
+    <vType id="no_lc" lcStrategic="0" lcCooperative="0" lcSpeedGain="0"/>
+
+    <!-- Veiculos ordenados por tempo de depart (obrigatorio pelo SUMO) -->
+    <!-- Lane 0 e Lane 1 intercaladas -->
+    <trip id="t_0" depart="0.00" from="E0" to="E2" departLane="0" type="no_lc"/>
+    <trip id="t_5" depart="0.00" from="E0" to="E2" departLane="1" type="no_lc"/>
+    <trip id="t_1" depart="4.00" from="E0" to="E2" departLane="0" type="no_lc"/>
+    <trip id="t_6" depart="4.00" from="E0" to="E2" departLane="1" type="no_lc"/>
+    <trip id="t_2" depart="8.00" from="E0" to="E2" departLane="0" type="no_lc"/>
+    <trip id="t_7" depart="8.00" from="E0" to="E2" departLane="1" type="no_lc"/>
+    <trip id="t_3" depart="12.00" from="E0" to="E2" departLane="0" type="no_lc"/>
+    <trip id="t_8" depart="12.00" from="E0" to="E2" departLane="1" type="no_lc"/>
+    <trip id="t_4" depart="16.00" from="E0" to="E2" departLane="0" type="no_lc"/>
     
+
 </routes>
 
 
