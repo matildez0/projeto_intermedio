@@ -19,6 +19,7 @@
     <trip id="t_3" depart="12.00" from="E0" to="E2" departLane="0" type="no_lc"/>
     <trip id="t_8" depart="12.00" from="E0" to="E2" departLane="1" type="no_lc"/>
     <trip id="t_4" depart="16.00" from="E0" to="E2" departLane="0" type="no_lc"/>
+    <trip id="t_9" depart="16.00" from="E0" to="E2" departLane="1" type="no_lc"/>
     
 
 </routes>
