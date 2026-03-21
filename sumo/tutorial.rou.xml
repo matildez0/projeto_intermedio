@@ -1,24 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- generated on 2026-03-20T22:50:06.165778+00:00 by Eclipse SUMO netedit 1.26.0
--->
-
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
 
-    <!-- Tipo de veiculo sem mudanca de lane estrategica -->
-    <vType id="no_lc" lcStrategic="0" lcCooperative="0" lcSpeedGain="0"/>
+    <vType id="no_lc" lcStrategic="0" lcCooperative="0" lcSpeedGain="0" lcKeepRight="0"/>
 
-    <!-- Veiculos ordenados por tempo de depart (obrigatorio pelo SUMO) -->
-    <!-- Lane 0 e Lane 1 intercaladas -->
-    <trip id="t_0" depart="0.00" from="E0" to="E2" departLane="0" type="no_lc"/>
-    <trip id="t_1" depart="2.00" from="E0" to="E2" departLane="1" type="no_lc"/>
-    <trip id="t_2" depart="4.00" from="E0" to="E2" departLane="0" type="no_lc"/>
-    <trip id="t_3" depart="6.00" from="E0" to="E2" departLane="1" type="no_lc"/>
-    <trip id="t_4" depart="8.00" from="E0" to="E2" departLane="0" type="no_lc"/>
-    <trip id="t_5" depart="10.00" from="E0" to="E2" departLane="1" type="no_lc"/>
-    
-    
+    <trip id="t_0" depart="0.00"  from="E0" to="E2" departLane="0" type="no_lc"/>
+    <trip id="t_1" depart="0.00"  from="E0" to="E2" departLane="1" type="no_lc"/>
+    <trip id="t_2" depart="10.00" from="E0" to="E2" departLane="0" type="no_lc"/>
+    <trip id="t_3" depart="10.00" from="E0" to="E2" departLane="1" type="no_lc"/>
+    <trip id="t_4" depart="20.00" from="E0" to="E2" departLane="0" type="no_lc"/>
+    <trip id="t_5" depart="20.00" from="E0" to="E2" departLane="1" type="no_lc"/>
+    <trip id="t_6" depart="30.00" from="E0" to="E2" departLane="0" type="no_lc"/>
+    <trip id="t_7" depart="30.00" from="E0" to="E2" departLane="1" type="no_lc"/>
+    <trip id="t_8" depart="40.00" from="E0" to="E2" departLane="0" type="no_lc"/>
+    <trip id="t_9" depart="40.00" from="E0" to="E2" departLane="1" type="no_lc"/>
 
 </routes>
-
-
