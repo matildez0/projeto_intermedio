@@ -4,13 +4,9 @@
 xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value="tutorial.net.xml"/>
-        <route-files value="tutorial.rou.xml"/>
+        <net-file value="manhattan.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+        <additional-files value="additional.add.xml"/>
     </input>
-
-    <time>
-        <begin value="0"/>
-        <end value="1000"/>
-    </time>
 
 </configuration>

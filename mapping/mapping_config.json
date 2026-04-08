@@ -1,58 +1,92 @@
 {
-    "config": {
-        "fixedOrder": true
+  "config": {
+    "fixedOrder": true
+  },
+  "prototypes": [
+    {
+      "name": "Car",
+      "accel": 2.6,
+      "decel": 4.5,
+      "length": 5.0,
+      "maxSpeed": 19.44,
+      "minGap": 2.5,
+      "sigma": 0.5,
+      "speedDeviation": 0.1,
+      "tau": 1.0
+    }
+  ],
+  "vehicles": [
+    {
+      "startingTime": "1 s",
+      "targetFlow": 1800,
+      "maxNumberVehicles": 250,
+      "route": "main_west_east",
+      "lanes": [0, 1],
+      "types": [
+        {
+          "name": "Car",
+          "weight": 100,
+          "applications": [
+            "org.eclipse.mosaic.app.npr.NprVehicleApp"
+          ],
+          "adHoc": {
+            "maxDistance": 300
+          }
+        }
+      ]
     },
-    "prototypes": [
+    {
+      "startingTime": "1 s",
+      "targetFlow": 700,
+      "maxNumberVehicles": 120,
+      "route": "north_south_1",
+      "lanes": [0, 1],
+      "types": [
         {
-            "name": "Car",
-            "accel": 2.6,
-            "decel": 4.5,
-            "length": 5.00,
-            "maxSpeed": 70.0,
-            "minGap": 2.5,
-            "sigma": 0.5,
-            "speedDeviation": 0.1,
-            "tau": 1
+          "name": "Car",
+          "weight": 100,
+          "applications": [
+            "org.eclipse.mosaic.app.npr.NprVehicleApp"
+          ],
+          "adHoc": {
+            "maxDistance": 300
+          }
         }
-    ],
-    "vehicles": [
+      ]
+    },
+    {
+      "startingTime": "1 s",
+      "targetFlow": 700,
+      "maxNumberVehicles": 120,
+      "route": "south_north_1",
+      "lanes": [0, 1],
+      "types": [
         {
-            "startingTime": "1 s",
-            "targetFlow": 6000,
-            "maxNumberVehicles": 400,
-            "route": "2",
-            "lanes": [ 1, 2 ],
-            "types": [
-                {
-                    "name": "Car",
-                    "weight": 80
-                },
-                {
-                    "name": "Car",
-                    "weight": 20,
-                    "applications": [ "org.eclipse.mosaic.fed.application.app.etsi.VehicleCamSendingApp" ]
-                }
-            ]
-        },
-        {
-            "startingTime": "1.0 s",
-            "targetFlow": 1000,
-            "maxNumberVehicles": 50,
-            "route": "1",
-            "lanes": [ 0 ],
-            "types": [
-                {
-                    "name": "Car",
-                    "weight": 80
-                },
-                {
-                    "name": "Car",
-                    "weight": 20,
-                    "applications": [ "org.eclipse.mosaic.fed.application.app.etsi.VehicleCamSendingApp" ]
-                }
-            ]
+          "name": "Car",
+          "weight": 100,
+          "applications": [
+            "org.eclipse.mosaic.app.npr.NprVehicleApp"
+          ],
+          "adHoc": {
+            "maxDistance": 300
+          }
         }
-    ]
+      ]
+    }
+  ],
+  "rsus": [
+    {
+      "name": "rsu_0",
+      "position": {
+        "latitude": 0.49847,
+        "longitude": -13.193746
+      },
+      "applications": [
+        "org.eclipse.mosaic.app.npr.NprRsuApp"
+      ],
+      "adHoc": {
+        "maxDistance": 300
+      }
+    }
+  ]
 }
-
-

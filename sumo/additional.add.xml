@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <!-- Tempos individuais de viagem -->
+    <tripinfo-output value="outputs/tripinfo.xml"/>
+
+    <!-- Estatísticas globais por timestep -->
+    <summary-output value="outputs/summary.xml"/>
+
+    <!-- Emissões -->
+    <emission-output value="outputs/emissions.xml"/>
+
+    <!-- Mudanças de faixa, útil se quiserem analisar merge -->
+    <lanechange-output value="outputs/lanechange.xml"/>
+
+    <!--
+      Opcional:
+      Se quiseres medir fila numa edge específica junto à obra,
+      convém usar edgeData ou laneData com intervalos.
+    -->
+
+    <edgeData id="traffic_stats"
+              file="outputs/edgedata.xml"
+              begin="0"
+              end="3600"
+              freq="60"
+              excludeEmpty="true"/>
+
+    <laneData id="lane_stats"
+              file="outputs/lanedata.xml"
+              begin="0"
+              end="3600"
+              freq="60"
+              excludeEmpty="true"/>
+</additional>

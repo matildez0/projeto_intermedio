@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <output id="file" enabled="true" update="5" loader="org.eclipse.mosaic.fed.output.generator.file.FileOutputLoader">
-        <filename>output.csv</filename>
-        <directory>.</directory>
+    <output id="file" enabled="true" update="1" loader="org.eclipse.mosaic.fed.output.generator.file.FileOutputLoader">
+        <filename>mosaic_output.csv</filename>
+        <directory>./outputs</directory>
         <separator>;</separator>
         <decimalSeparator>.</decimalSeparator>
+
         <subscriptions>
-            <subscription id="VehicleUpdates">
+            <subscription id="VehicleUpdates" enabled="true">
                 <entries>
                     <entry>"VEHICLE_UPDATES"</entry>
                     <entry>Time</entry>
@@ -17,6 +18,7 @@
                     <entry>Updated:Heading</entry>
                 </entries>
             </subscription>
+
             <subscription id="VehicleRegistration" enabled="true">
                 <entries>
                     <entry>"VEHICLE_REGISTRATION"</entry>
@@ -24,6 +26,34 @@
                     <entry>Mapping.Name</entry>
                     <entry>Mapping.Applications</entry>
                     <entry>Mapping.VehicleType.Name</entry>
+                </entries>
+            </subscription>
+
+            <subscription id="RsuRegistration" enabled="true">
+                <entries>
+                    <entry>"RSU_REGISTRATION"</entry>
+                    <entry>Time</entry>
+                    <entry>Mapping.Name</entry>
+                    <entry>Mapping.Applications</entry>
+                </entries>
+            </subscription>
+
+            <subscription id="V2xMessageTransmission" enabled="true">
+                <entries>
+                    <entry>"V2X_TX"</entry>
+                    <entry>Time</entry>
+                    <entry>Message:Routing.Source.SourceName</entry>
+                    <entry>Message:ClassSimpleName</entry>
+                </entries>
+            </subscription>
+
+            <subscription id="V2xMessageReception" enabled="true">
+                <entries>
+                    <entry>"V2X_RX"</entry>
+                    <entry>Time</entry>
+                    <entry>Message:Routing.Source.SourceName</entry>
+                    <entry>Receiver:Name</entry>
+                    <entry>Message:ClassSimpleName</entry>
                 </entries>
             </subscription>
         </subscriptions>
@@ -34,10 +64,10 @@
         <port>46587</port>
         <subscriptions>
             <subscription id="VehicleUpdates" enabled="true"/>
-            <subscription id="V2xMessageReception" enabled="true"/>
-            <subscription id="V2xMessageTransmission" enabled="true"/>
             <subscription id="VehicleRegistration" enabled="true"/>
             <subscription id="RsuRegistration" enabled="true"/>
+            <subscription id="V2xMessageTransmission" enabled="true"/>
+            <subscription id="V2xMessageReception" enabled="true"/>
         </subscriptions>
     </output>
 </configuration>

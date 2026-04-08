@@ -1,0 +1,18 @@
+{
+  "nodes": [
+    {
+      "nodeType": "Vehicle",
+      "communication": {
+        "maxTransmissionRange": 300.0,
+        "transmissionPower": 20.0
+      }
+    },
+    {
+      "nodeType": "RoadSideUnit",
+      "communication": {
+        "maxTransmissionRange": 300.0,
+        "transmissionPower": 20.0
+      }
+    }
+  ]
+}
