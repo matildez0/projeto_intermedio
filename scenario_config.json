@@ -27,6 +27,14 @@
         "application": true,
         "sns": true,
         "output": true,
-        "sumo": true
+        "sumo": true,
+	"mapping": true
+    },
+    "mapping": {
+	"roadNetworkFile": "sumo/manhattan.net.xml"
+    },
+    "sumo": {
+	"configurationFile": "sumo/simulation.sumocfg",
+	"networkFile": "sumo/manhattan.net.xml"
     }
 }
