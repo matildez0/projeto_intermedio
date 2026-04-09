@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <input>
+        <node-files value="manhattan.nod.xml"/>
+        <edge-files value="manhattan.edg.xml"/>
+    </input>
+    <output>
+        <output-file value="manhattan.net.xml"/>
+    </output>
+    <processing>
+        <no-turnarounds value="true"/>
+        <offset.disable-normalization value="true"/>
+    </processing>
+</configuration>
