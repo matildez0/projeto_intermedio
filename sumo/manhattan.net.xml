@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2026-04-18T02:24:29.823062+00:00 by Eclipse SUMO netedit 1.26.0
+<!-- generated on 2026-04-18T02:32:31.839442+00:00 by Eclipse SUMO netedit 1.26.0
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
-        <sumo-net-file value="manhattan.net.xml"/>
+        <sumo-net-file value="/home/netsim/projeto_final_npr/sumo/manhattan.net.xml"/>
     </input>
 
     <output>
-        <output-file value="manhattan.net.xml"/>
+        <output-file value="/home/netsim/projeto_final_npr/sumo/manhattan.net.xml"/>
         <output.street-names value="true"/>
     </output>
 
